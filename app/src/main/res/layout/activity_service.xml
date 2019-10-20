@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity"
+    android:background="@color/latar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/textservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Service"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/button"
+                android:layout_marginTop="30dp"/>
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/penjelasanservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/penjelasanB"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/button"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/webB_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/link_activity"/>
+            <Button
+                android:id="@+id/open_website_service"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/button"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="24dp"
+                android:text="@string/openweb"
+                android:onClick="openWebB"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:id="@+id/servicecontoh"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Contoh Syntax"
+                android:background="@color/button"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

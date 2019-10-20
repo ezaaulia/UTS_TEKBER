@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Aplikasi Sederhana</string>
+    <string name="komponen_pemrograman_android">Komponen Pemrograman\nAndroid</string>
+    <string name="activity">Activity</string>
+    <string name="service">Service</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="manifest">Manifest</string>
+    <string name="link_activity">https://developer.android.com/guide/components/fundamentals?hl=id</string>
+    <string name="openweb">Open Website</string>
+    <string name="penjelasanA">Aktivitas adalah titik masuk untuk berinteraksi dengan pengguna.
+        Ini mewakili satu layar dengan antarmuka pengguna.
+        Misalnya, aplikasi email mungkin memiliki satu aktivitas yang menampilkan daftar email baru, aktivitas lain untuk menulis email, dan aktivitas satunya lagi untuk membaca email.
+        Walaupun semua aktivitas bekerja sama untuk membentuk pengalaman pengguna yang kohesif dalam aplikasi email, masing-masing tidak saling bergantung.
+        Karenanya, aplikasi berbeda bisa memulai salah satu aktivitas ini (jika aplikasi email mengizinkannya).
+        Misalnya, aplikasi kamera bisa memulai aktivitas dalam aplikasi email yang membuat email baru agar pengguna bisa berbagi gambar.\n </string>
+    <string name="penjelasanB">Layanan adalah titik masuk serbaguna untuk menjaga aplikasi tetap berjalan di latar belakang bagi semua jenis alasan.
+        Ini adalah komponen yang berjalan di latar belakang untuk melakukan operasi yang berjalan lama atau untuk melakukan pekerjaan bagi proses jarak jauh.
+        Layanan tidak menyediakan antarmuka pengguna. Misalnya, sebuah layanan bisa memutar musik di latar belakang sementara pengguna berada dalam aplikasi lain, atau layanan bisa menarik data lewat jaringan tanpa memblokir interaksi pengguna dengan aktivitas.
+        Komponen lain, seperti aktivitas, bisa memulai layanan dan membiarkannya berjalan atau mengikat layanan untuk berinteraksi dengannya.
+        Sebenarnya ada dua layanan semantik berbeda yang memberi tahu sistem tentang cara mengelola aplikasi: Layanan yang dimulai memberi tahu sistem agar tetap berjalan hingga pekerjaannya selesai.
+        Hal ini bisa jadi untuk menyinkronkan beberapa data di latar belakang atau memutar musik meskipun setelah pengguna meninggalkan aplikasi tersebut.\n</string>
+    <string name="penjelasanC">Penerima siaran adalah komponen yang memungkinkan sistem menyampaikan kejadian di luar alur pengguna regular, menjadikan aplikasi tersebut dapat merespons pengumuman siaran seluruh sistem. 
+        Oleh karena penerima siaran adalah entri yang didefinisikan dengan baik ke dalam aplikasi, sistem dapat mengirimkan siaran meskipun ke aplikasi yang saat ini tidak berjalan. 
+        Jadi, misalnya, suatu aplikasi dapat menjadwalkan alarm untuk mengirimkan notifikasi agar pengguna tahu tentang acara yang akan datang dan dengan mengirimkan alarm tersebut ke Penerima Siaran aplikasi, aplikasi tersebut tidak perlu untuk tetap berjalan hingga alarm mati. 
+        Banyak siaran berasal dari sistem—misalnya, siaran yang mengumumkan bahwa layar sudah dimatikan, baterai lemah, atau gambar sudah diambil. 
+        Aplikasi juga dapat mengawali siaran—misalnya, untuk memberi tahu aplikasi lain bahwa beberapa data sudah didownload ke perangkat dan tersedia untuk digunakan. 
+        Walaupun penerima siaran tidak menampilkan antarmuka pengguna, penerima bisa membuat notifikasi bilah status untuk memberi tahu pengguna kapan kejadian siaran dilakukan. 
+        Meskipun penerima siaran umumnya cuma menjadi gerbang untuk komponen lain dan dimaksudkan untuk melakukan pekerjaan dalam jumlah sangat minim.\n</string>
+    <string name="penjelasanD">Penyedia materi mengelola set data aplikasi secara bersama-sama, yang dapat Anda simpan di sistem file, di database SQLite, di web, atau di lokasi penyimpanan persisten lain yang dapat diakses aplikasi Anda.
+        Melalui penyedia materi, aplikasi lain bisa melakukan kueri atau memodifikasi data jika penyedia materi mengizinkannya.
+        Misalnya, sistem Android menyediakan penyedia materi yang mengelola informasi kontak pengguna.
+        Karenanya, setiap aplikasi dengan izin yang sesuai bisa melakukan kueri mengenai bagian dari penyedia materi, seperti ContactsContract.Data, untuk membaca dan menulis informasi tentang orang tertentu.
+        Aplikasi ini membujuk agar memikirkan penyedia konten sebagai abstraksi di database, karena terdapat banyak API dan dukungan dibuat untuk kasus umum tersebut.
+        Namun demikian, penyedia konten memiliki beragam tujuan inti untuk perspektif desain-sistem.
+        Bagi sistem, penyedia konten adalah titik masuk ke dalam suatu aplikasi untuk memublikasikan item data bernama, yang diidentifikasi oleh skema URI.
+        Jadi sebuah aplikasi dapat memutuskan bagaimana ia ingin memetakan data yang ada di dalamnya ke ruang nama URI, membagikan URI tersebut ke entitas lain yang dapat menggunakannya guna mengakses data.\n</string>
+    <string name="penjelasanE">Sebelum sistem Android bisa memulai komponen aplikasi, sistem harus mengetahui bahwa komponen ada dengan membaca file manifes, AndroidManifest.xml aplikasi.
+        Aplikasi Anda harus mendeklarasikan semua komponennya dalam file ini, yang harus menjadi root dari direktori proyek aplikasi.
+        Manifes melakukan banyak hal selain mendeklarasikan komponen aplikasi, seperti yang berikut:
+        \n1. Mengidentifikasi izin pengguna yang diperlukan aplikasi, seperti akses Internet atau akses-baca ke kontak pengguna.
+        \n2. Mendeklarasikan API Level minimum yang diperlukan aplikasi, berdasarkan API yang digunakan aplikasi.
+        \n3. Mendeklarasikan fitur perangkat keras dan perangkat lunak yang diperlukan aplikasi, seperti kamera, layanan Bluetooth, atau layar multisentuh.
+        \n4. Mendeklarasikan pustaka API aplikasi perlu ditautkan (selain Android framework API), seperti library Google Maps.\n </string>
+    <string name="activitytext">Activity</string>
+    <string name="contoh_syntax">Contoh Syntax</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uts_appsederhana">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".cthmanifest"/>
+        <activity android:name=".cthprovider" />
+        <activity android:name=".cthreceiver" />
+        <activity android:name=".cthservice" />
+        <activity android:name=".cthactivity" />
+        <activity android:name=".manifest" />
+        <activity android:name=".contentprovider" />
+        <activity android:name=".broadcastreceiver" />
+        <activity android:name=".service" />
+        <activity android:name=".activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="https://developer.android.com/guide/components/fundamentals?hl=id" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

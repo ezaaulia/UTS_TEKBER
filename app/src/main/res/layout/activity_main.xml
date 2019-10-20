@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/latar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/komponen_pemrograman_android"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="@color/button"
+                    android:layout_marginTop="30dp"/>
+                <Button
+                    android:id="@+id/activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/activity"
+                    android:layout_marginTop="110dp"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"/>
+                <Button
+                    android:id="@+id/service"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/service"
+                    android:layout_marginTop="210dp"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"/>
+                <Button
+                    android:id="@+id/broadcastreceiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/broadcast_receiver"
+                    android:layout_marginTop="310dp"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"/>
+                <Button
+                    android:id="@+id/contentprovider"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/content_provider"
+                    android:layout_marginTop="410dp"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"/>
+                <Button
+                    android:id="@+id/manifest"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/manifest"
+                    android:layout_marginTop="510dp"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
